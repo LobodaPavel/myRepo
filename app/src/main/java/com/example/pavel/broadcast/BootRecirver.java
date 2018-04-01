@@ -20,6 +20,4 @@ public class BootRecirver extends BroadcastReceiver{
             }
         }
     }
-
-
 }
