@@ -13,11 +13,8 @@ public class BootRecirver extends BroadcastReceiver{
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if(intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)){
-            Toast.makeText(context, "Boot completed", Toast.LENGTH_LONG).show();
-            for (int y=0; y<10; y++){
-                Log.d(TAG, "Boot Completed"); // Чтоб не потерять
-            }
-        }
+        Log.d("+++", "hello world");
+        Toast.makeText(context, "Boot completed", Toast.LENGTH_LONG).show();
+
     }
 }
